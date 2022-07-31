@@ -1,0 +1,141 @@
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0;
+    padding: 15vh 0;
+
+}
+
+.brandLogo{
+    width: 150px;
+    height: auto;
+}
+/* main */
+main{
+    text-align: center;
+    align-items: center;
+}
+.title{
+    display: flex;
+    margin: auto;
+    width: 350px;
+}
+.titleFirstPart{
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+.titleSecondPart{
+    font-weight: 700;    
+}
+.notify{
+    padding: 20px 0;
+}
+.error{
+    color: hsl(354, 100%, 66%);
+    visibility: hidden;
+}
+.errorBorder{
+    border: 1px solid hsl(354, 100%, 66%);
+}
+.showErr{
+    visibility: visible;
+}
+button, input{
+    padding: 10px;
+    line-height: 2;
+    border-radius: 30px;
+}
+
+input{
+    width: 400px;
+    border: 1px solid hsl(223, 100%, 88%)
+}
+
+button{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    border: 0px;
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+p, button, input{
+    font-size: 20px;
+}
+.dashboard_img{
+    margin: auto;
+    width: 700px;
+    height: auto;
+}
+/* social media links */
+.social{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(0, 0%, 59%);
+}
+.social_ul{
+    width: 150px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.icon{
+    /* background-color:hsl(223, 100%, 88%); */
+    border-radius: 50%;
+    padding: 10px;
+    color:hsl(223, 87%, 63%);
+}
+.icon:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    cursor: pointer;
+}
+
+
+/* responsive design */
+
+@media (max-width: 375px){
+    body{
+        padding: 3vh 0;
+    }
+    main{
+        width: 85vw;
+    }
+    title{
+        width: 80vw;
+    }
+    
+    .notify{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    button, input{
+        width: 85vw;
+    }
+    /* input{
+        margin-left: -10px;
+    } */
+    button{
+        /* padding: 0 20px;
+        line-height: 2; */
+        margin: 2vh auto 0 auto;
+        margin-left: 0;
+    }
+    .dashboard_img{
+        width: 85vw;
+    }
+}
